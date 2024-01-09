@@ -28,6 +28,9 @@
 				},
 				{
 					"name": "aggregate1"
+				},
+				{
+					"name": "alterRow1"
 				}
 			],
 			"scriptLines": [
@@ -63,7 +66,8 @@
 				"     AverageRating = avg(toInteger({Rotten Tomato})),",
 				"          HighestRead = first(title),",
 				"          LowestRead = last(title),",
-				"          NumberOfMovies = count()) ~> aggregate1"
+				"          NumberOfMovies = count()) ~> aggregate1",
+				"aggregate1 alterRow(upsertIf(true())) ~> alterRow1"
 			]
 		}
 	}
