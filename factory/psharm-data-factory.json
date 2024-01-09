@@ -1,0 +1,9 @@
+{
+	"name": "psharm-data-factory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5baa378b-3ff7-40f9-b26e-91e1029db492",
+		"tenantId": "ac3e2638-4c75-49c5-9a3e-3f3cdfc6602e"
+	}
+}
